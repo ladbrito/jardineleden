@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jardín El Edén — Restaurante Tierra y Mar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <div class="brand"><img src="assets/logo-horizontal.svg" alt="Jardín El Edén"></div>
+    <div class="pillnav" id="pillnav">
+      <a href="#destacados">Destacados</a>
+      <a href="#compartir">Para compartir</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#mar">Del mar</a>
+      <a href="#ceviches">Ceviches</a>
+      <a href="#burgers">Burgers &amp; HD</a>
+      <a href="#alitas">Alitas</a>
+      <a href="#empezar">Para empezar</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 3 6 6 6 10a6 6 0 0 1-12 0c0-4 2-7 6-10Z"/></svg>
+        Cocina de tierra y mar
+      </span>
+      <img class="hero-title-logo" src="assets/logo-horizontal-2.svg" alt="Jardín El Edén">
+      <p class="tagline">Mariscos frescos, deliciosos platillos de la costa, carnes y molcajetes, servidos en un ambiente campirano, a un costado del antiguo camino a Taxco. Contamos con alberca y Jacuzzi. Somos Jardín El Edén.</p>
+      <div class="hero-cta">
+        <a href="#destacados" class="btn btn-primary">Ver el menú</a>
+        <a href="#ubicacion" class="btn btn-ghost">Cómo llegar</a>
+      </div>
+      <div class="hero-address">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-7.2 7-12a7 7 0 0 0-14 0c0 4.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Carretera Federal Cuernavaca–Taxco km 54.5,<br>Col. Zacualpan, Huajintlán, Morelos
+      </div>
+    </div>
+    <div class="hero-banner">
+      <img src="assets/banner-camarones-hero.png" alt="Camarones a la diabla con arroz y limón, Jardín El Edén">
+      <div class="hero-floating-card">
+        <img src="assets/hero-floating-hamburguesa.jpg" alt="Hamburguesa con papas, Jardín El Edén">
+      </div>
+      <div class="hero-floating-card-2">
+        <img src="assets/hero-floating-alitas.jpg" alt="Alitas BBQ con papas, Jardín El Edén">
+      </div>
+    </div>
+    </div>
+  </div>
+</header>
+
+<div class="divider">
+  <svg viewBox="0 0 1080 34" preserveAspectRatio="none">
+    <path d="M0 17 Q 30 2, 60 17 T 120 17 T 180 17 T 240 17 T 300 17 T 360 17 T 420 17 T 480 17 T 540 17 T 600 17 T 660 17 T 720 17 T 780 17 T 840 17 T 900 17 T 960 17 T 1020 17 T 1080 17"
+      fill="none" stroke="#5c8f28" stroke-width="1.4" stroke-linecap="round" opacity="0.55"/>
+  </svg>
+</div>
+
+<!-- ============ DESTACADOS ============ -->
+<section class="destacados wrap" id="destacados">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Lo más pedido</span>
+      <h2>Nuestras estrellas</h2>
+      <p>Los platillos que definen la casa — para compartir, a la mesa, sin prisa.</p>
+    </div>
+  </div>
+  <div class="star-grid">
+    <div class="star-card">
+      <span class="badge">★ Para compartir</span>
+      <h3>Molcajete Mixto de Carnes</h3>
+      <p class="desc">Cecina, arrachera, longaniza, bistec, nopales, queso asadero, frijoles de la olla y cebolla. Ideal para 4 personas.</p>
+      <p class="price">$350</p>
+    </div>
+    <div class="star-card">
+      <span class="badge">★ Bolsa a la mesa</span>
+      <h3>Camarones Luisiana</h3>
+      <p class="desc">Camarones con champiñones, papa Cambridge, elote amarillo y salchicha argentina. Ideal para 4 personas.</p>
+      <p class="price">$700</p>
+    </div>
+    <div class="star-card">
+      <span class="badge">★ Del jardín</span>
+      <h3>Molcajete de Camarón con Brochetas</h3>
+      <p class="desc">Camarón fresco y brochetas servidas directo en molcajete de piedra, al estilo de la casa.</p>
+      <p class="price">$380</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="menu-section wrap">
+
+  <div class="menu-banner" id="compartir">
+    <img id="molcajete-parallax" src="assets/banner-molcajete.jpg" alt="Molcajete con carnes, tacos y salsas, Jardín El Edén">
+    <h2 class="banner-title">Para compartir</h2>
+  </div>
+
+  <div class="cat-block tierra">
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Molcajete Mixto de Carnes</span><span class="item-leader"></span><span class="item-price">$350</span></div>
+        <div class="item-desc">Cecina, arrachera, longaniza, bistec, nopales, queso asadero, frijoles de la olla y cebolla. Ideal para 4 personas.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Molcajete de Camarón con Brochetas</span><span class="item-leader"></span><span class="item-price">$380</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Camarones Luisiana</span><span class="item-leader"></span><span class="item-price">$700</span></div>
+        <div class="item-desc">Champiñones, papa Cambridge, elote amarillo y salchicha argentina. Bolsa a la mesa · ideal para 4 personas.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="especialidades">
+    <img id="fajitas-parallax" class="menu-banner-parallax" src="assets/banner-fajitas.jpg" alt="Fajitas de pollo con guacamole y pico de gallo, Jardín El Edén">
+    <h2 class="banner-title">Especialidades del Jardín</h2>
+  </div>
+
+  <div class="cat-block tierra">
+    <p class="cat-sub">Fajitas</p>
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Fajitas Mixtas</span><span class="item-leader"></span><span class="item-price">$150</span></div>
+        <div class="item-desc">Pollo, camarón, chile morrón y cebolla.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Fajitas de Camarón</span><span class="item-leader"></span><span class="item-price">$150</span></div>
+        <div class="item-desc">Con morrón y cebolla. Elige con o sin picante.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Fajitas de Pollo</span><span class="item-leader"></span><span class="item-price">$130</span></div>
+      </div>
+    </div>
+    <p class="cat-sub">Carnes</p>
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Molcajete Mixto de Carnes</span><span class="item-leader"></span><span class="item-price">$350</span></div>
+        <div class="item-desc">Ver detalle en «Para compartir».</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="mar">
+    <img src="assets/banner-del-mar.jpg" alt="Camarones al mojo de ajo con arroz y limón, Jardín El Edén">
+    <h2 class="banner-title">Del mar a tu mesa</h2>
+  </div>
+
+  <div class="cat-block mar">
+    <p class="cat-sub">Camarones</p>
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Camarones Estilo Nayarit</span><span class="item-leader"></span><span class="item-price">$240</span></div>
+        <div class="item-desc">Porción de 600 g.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Camarones a la Diabla</span><span class="item-leader"></span><span class="item-price">$240</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Camarones al Ajillo</span><span class="item-leader"></span><span class="item-price">$240</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Camarones a la Mantequilla</span><span class="item-leader"></span><span class="item-price">$240</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Camarones Jalapeños</span><span class="item-leader"></span><span class="item-price">$240</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Brochetas de Camarón</span><span class="item-leader"></span><span class="item-price">$240</span></div>
+        <div class="item-desc">Con cebolla y chile morrón. Orden de 3.</div>
+      </div>
+    </div>
+    <p class="cat-sub">Pescados y mariscos</p>
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Mojarra</span><span class="item-leader"></span><span class="item-price">$280</span></div>
+        <div class="item-desc">Al ajillo, a la diabla o estilo Nayarit.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Filete de Pescado</span><span class="item-leader"></span><span class="item-price">$160</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Mejillones Nayarit</span><span class="item-leader"></span><span class="item-price">$180</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Aguachile</span><span class="item-leader"></span><span class="item-price">$180</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="ceviches">
+    <img src="assets/banner-ceviches.jpg" alt="Ceviche de camarón fresco, Jardín El Edén">
+    <h2 class="banner-title">Ceviches</h2>
+  </div>
+
+  <div class="cat-block mar">
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Ceviche de Pescado</span><span class="item-leader"></span><span class="item-price">$170</span></div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Ceviche de Camarón</span><span class="item-leader"></span><span class="item-price">$180</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="burgers">
+    <img src="assets/banner-hamburguesas.jpg" alt="Hamburguesa con papas a la francesa, Jardín El Edén">
+    <h2 class="banner-title">Hamburguesas &amp; hot dogs</h2>
+  </div>
+
+  <div class="cat-block tierra">
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Hamburguesa con Queso</span><span class="item-leader"></span><span class="item-price">$70</span></div>
+        <div class="item-desc">Con papas a la francesa.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Hamburguesa Especial</span><span class="item-leader"></span><span class="item-price">$100</span></div>
+        <div class="item-desc">Doble carne, doble queso y papas a la francesa.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Hamburguesa Hawaiana</span><span class="item-leader"></span><span class="item-price">$75</span></div>
+        <div class="item-desc">Piña, jamón, cebolla, jitomate y chile.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Hamburguesa Cubana</span><span class="item-leader"></span><span class="item-price">$120</span></div>
+        <div class="item-desc">Salchicha, tocino, huevo, carne y chorizo.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Súper Hot Dogs</span><span class="item-leader"></span><span class="item-price">$60</span></div>
+        <div class="item-desc">Con papas a la francesa.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="alitas">
+    <img src="assets/banner-alitas.jpg" alt="Alitas BBQ con papas, Jardín El Edén">
+    <h2 class="banner-title">Alitas</h2>
+  </div>
+
+  <div class="cat-block tierra">
+    <p class="cat-sub">Elige tu sabor</p>
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">BBQ</span><span class="item-leader"></span><span class="item-price">$80</span></div>
+        <div class="item-desc">Con papas a la francesa.</div>
+      </div>
+      <div class="item"><div class="item-top"><span class="item-name">Tamarindo Habanero</span><span class="item-leader"></span><span class="item-price">$80</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Frutos Rojos</span><span class="item-leader"></span><span class="item-price">$80</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Maracuyá</span><span class="item-leader"></span><span class="item-price">$80</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Mango Habanero</span><span class="item-leader"></span><span class="item-price">$80</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Takis &amp; Ruffles</span><span class="item-leader"></span><span class="item-price">$80</span></div></div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="empezar">
+    <img src="assets/banner-para-empezar.jpg" alt="Tostadas de camarón y sandwich de pierna, Jardín El Edén">
+    <h2 class="banner-title">Para empezar</h2>
+  </div>
+
+  <div class="cat-block tierra">
+    <div class="item-grid">
+      <div class="item"><div class="item-top"><span class="item-name">Guacamole con Totopos</span><span class="item-leader"></span><span class="item-price">$100</span></div></div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Pepinillos</span><span class="item-leader"></span><span class="item-price">$50</span></div>
+        <div class="item-desc">Con aderezo o chile Tajín.</div>
+      </div>
+      <div class="item"><div class="item-top"><span class="item-name">Papas a la Francesa</span><span class="item-leader"></span><span class="item-price">$40</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Empanada de Camarón</span><span class="item-leader"></span><span class="item-price">$45</span></div></div>
+    </div>
+  </div>
+
+  <div class="menu-banner" id="bebidas">
+    <img src="assets/banner-bebidas.jpg" alt="Micheladas preparadas, Jardín El Edén">
+    <h2 class="banner-title">Bebidas</h2>
+  </div>
+
+  <div class="cat-block mar">
+    <p class="cat-sub">Preparadas</p>
+    <div class="item-grid">
+      <div class="item"><div class="item-top"><span class="item-name">Michelada Cubana</span><span class="item-leader"></span><span class="item-price">$90</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Cantarito de Tequila</span><span class="item-leader"></span><span class="item-price">2×$140</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Azulito con Vodka</span><span class="item-leader"></span><span class="item-price">$60</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Conga</span><span class="item-leader"></span><span class="item-price">$60</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Mega</span><span class="item-leader"></span><span class="item-price">$56</span></div></div>
+    </div>
+    <p class="cat-sub">Cervezas</p>
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-top"><span class="item-name">Corona</span><span class="item-leader"></span><span class="item-price">$26</span></div>
+        <div class="item-desc">Media.</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Victoria</span><span class="item-leader"></span><span class="item-price">$26</span></div>
+        <div class="item-desc">Media.</div>
+      </div>
+      <div class="item"><div class="item-top"><span class="item-name">Modelo Especial</span><span class="item-leader"></span><span class="item-price">$65</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Pacífico</span><span class="item-leader"></span><span class="item-price">$65</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Negra Modelo</span><span class="item-leader"></span><span class="item-price">$65</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Michelada</span><span class="item-leader"></span><span class="item-price">$100</span></div></div>
+    </div>
+    <p class="cat-sub">Refrescos y bebidas sin alcohol</p>
+    <div class="item-grid">
+      <div class="item"><div class="item-top"><span class="item-name">Refresco de Vidrio</span><span class="item-leader"></span><span class="item-price">$23</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Refresco 600 ml</span><span class="item-leader"></span><span class="item-price">$25</span></div></div>
+      <div class="item"><div class="item-top"><span class="item-name">Boing</span><span class="item-leader"></span><span class="item-price">$24</span></div></div>
+      <div class="item">
+        <div class="item-top"><span class="item-name">Jugo del Valle</span><span class="item-leader"></span><span class="item-price">$27</span></div>
+        <div class="item-desc">Vidrio.</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="divider">
+  <svg viewBox="0 0 1080 34" preserveAspectRatio="none">
+    <path d="M0 17 Q 30 2, 60 17 T 120 17 T 180 17 T 240 17 T 300 17 T 360 17 T 420 17 T 480 17 T 540 17 T 600 17 T 660 17 T 720 17 T 780 17 T 840 17 T 900 17 T 960 17 T 1020 17 T 1080 17"
+      fill="none" stroke="#1c525f" stroke-width="1.4" stroke-linecap="round" opacity="0.4"/>
+  </svg>
+</div>
+
+<!-- ============ UBICACION ============ -->
+<section class="location" id="ubicacion">
+  <div class="wrap location-inner">
+    <div>
+      <span class="eyebrow">Visítanos</span>
+      <h2>Te esperamos en el jardín</h2>
+
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-7.2 7-12a7 7 0 0 0-14 0c0 4.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <div>
+          <div class="label">Dirección</div>
+          <div class="value">Carretera Federal Cuernavaca–Taxco, km 54.5<br>Colonia Zacualpan, Huajintlán, Morelos</div>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div>
+          <div class="label">Horario</div>
+          <div class="value">Viernes, sábado y domingo · 10:00 am – 2:00 am</div>
+          <div class="note">Estamos a tus órdenes.</div>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+        <div>
+          <div class="label">Reservaciones</div>
+          <div class="value">Añade tu teléfono aquí</div>
+          <div class="note">Placeholder — reemplázalo con tu número de contacto.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Jard%C3%ADn+El+Ed%C3%A9n,+Huajintl%C3%A1n,+Morelos&ll=18.612271,-99.432365&z=16&output=embed">
+      </iframe>
+      <div class="map-foot">
+        <span>Zacualpan, Huajintlán · Morelos</span>
+        <a class="btn btn-primary" style="padding:9px 18px;font-size:0.82rem;" target="_blank" rel="noopener"
+          href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20El%20Ed%C3%A9n%20Huajintl%C3%A1n%20Morelos&query_place_id=ChIJbZJKUADNzYURZAaJOteje6Q">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand"><img src="assets/logo-horizontal-blanco-footer.svg" alt="Jardín El Edén"></div>
+    <p>© 2026 Jardín El Edén · Tierra y mar · Huajintlán, Morelos</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var img = document.querySelector('#compartir img');
+  if(!img) return;
+  var container = img.parentElement;
+  var ticking = false;
+
+  function update(){
+    var rect = container.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var maxShift = container.offsetHeight * 0.18;
+    // -1 when banner is fully below viewport, +1 when fully above, 0 when centered
+    var progress = (rect.top + rect.height / 2 - vh / 2) / vh;
+    progress = Math.max(-1, Math.min(1, progress));
+    var offset = -progress * maxShift;
+    img.style.transform = 'translateY(' + offset.toFixed(1) + 'px)';
+    ticking = false;
+  }
+
+  function onScroll(){
+    if(!ticking){
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', update);
+  update();
+  setTimeout(update, 300);
+})();
+</script>
+
+<script>
+(function(){
+  var imgs = Array.prototype.filter.call(
+    document.querySelectorAll('.menu-banner img'),
+    function(img){ return img.closest('#compartir') === null; }
+  );
+  if(!imgs.length) return;
+  var ticking = false;
+
+  function update(){
+    imgs.forEach(function(img){
+      var container = img.parentElement;
+      var rect = container.getBoundingClientRect();
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var extra = img.offsetHeight - container.offsetHeight;
+      if (extra <= 0) return;
+      var progress = (vh - rect.top) / (vh + rect.height);
+      progress = Math.min(1, Math.max(0, progress));
+      var offset = (progress - 0.5) * extra * 0.6;
+      img.style.transform = 'translateY(calc(-50% + ' + offset.toFixed(1) + 'px))';
+    });
+    ticking = false;
+  }
+
+  function onScroll(){
+    if(!ticking){
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+
+  // Ensure sizes are correct once every image has finished loading/decoding
+  var pending = imgs.length;
+  imgs.forEach(function(img){
+    if (img.complete) {
+      pending--;
+    } else {
+      img.addEventListener('load', function(){ update(); });
+    }
+  });
+  window.addEventListener('load', update);
+  update();
+  // Extra delayed pass in case fonts/layout shift banner height after first paint
+  setTimeout(update, 300);
+})();
+</script>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('pillnav');
+  if(!toggle || !menu) return;
+
+  function closeMenu(){
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Abrir menú');
+  }
+  function openMenu(){
+    menu.classList.add('open');
+    toggle.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Cerrar menú');
+  }
+
+  toggle.addEventListener('click', function(e){
+    e.stopPropagation();
+    if(menu.classList.contains('open')){ closeMenu(); } else { openMenu(); }
+  });
+
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', function(e){
+    if(menu.classList.contains('open') && !menu.contains(e.target) && !toggle.contains(e.target)){
+      closeMenu();
+    }
+  });
+
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 860){ closeMenu(); }
+  });
+})();
+</script>
+</body>
+</html>
